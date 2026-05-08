@@ -9,15 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#17202A",
-        mist: "#F5F7FA",
-        line: "#D7DEE8",
-        pine: "#0F766E",
-        steel: "#2F5D7C",
-        amber: "#B7791F"
+        ink: "#07142E",
+        mist: "#F6F7FB",
+        line: "#D6DBE8",
+        navy: "#071A3D",
+        gold: "#C9A227",
+        royal: "#1C3F7A",
+        pine: "#071A3D",
+        steel: "#1C3F7A",
+        amber: "#C9A227"
       },
       boxShadow: {
-        soft: "0 18px 45px rgba(23, 32, 42, 0.10)"
+        soft: "0 18px 45px rgba(7, 20, 46, 0.12)"
       }
     }
   },
