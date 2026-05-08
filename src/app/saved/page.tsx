@@ -1,16 +1,16 @@
 import Link from "next/link";
 import { ArrowRight, FileText } from "lucide-react";
 import { listBriefings } from "@/lib/briefings";
+import type { Briefing } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
 export default async function SavedBriefingsPage() {
-  let briefings;
+  let briefings: Briefing[] = [];
   let error: string | null = null;
   try {
     briefings = await listBriefings();
   } catch (err) {
-    briefings = [];
     error = err instanceof Error ? err.message : "Could not load saved briefings.";
   }
 
