@@ -4,7 +4,7 @@ A simple Next.js app that turns an asset, currency pair, sector, company, or mar
 
 ## Features
 
-- Home page with a market-topic input
+- Home page with a market-topic input, multi-select dropdown, and comma-separated manual entry
 - AI-generated briefing with market summary, key drivers, risks, business impact, and action points
 - Results page for each saved briefing
 - Saved briefings archive
