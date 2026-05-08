@@ -49,7 +49,18 @@ export async function generateBriefing(topic: string): Promise<BriefingSections>
       },
       {
         role: "user",
-        content: `Create a short market briefing for: ${topic}\n\nReturn this exact JSON shape:\n{\n  "marketSummary": "one concise paragraph",\n  "keyDrivers": ["3 to 5 bullets"],\n  "risksToWatch": ["3 to 5 bullets"],\n  "businessImpact": "one concise paragraph",\n  "suggestedActionPoints": ["3 to 5 practical bullets"]\n}`
+        content: `Create a short market briefing for: ${topic}
+
+If the user provides multiple comma-separated topics, cover them together in one cohesive briefing and explain the connections between them where useful.
+
+Return this exact JSON shape:
+{
+  "marketSummary": "one concise paragraph",
+  "keyDrivers": ["3 to 5 bullets"],
+  "risksToWatch": ["3 to 5 bullets"],
+  "businessImpact": "one concise paragraph",
+  "suggestedActionPoints": ["3 to 5 practical bullets"]
+}`
       }
     ]
   });
